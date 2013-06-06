@@ -39,14 +39,14 @@
 
 #east {
    right:20px;
-   top:50%;
-   margin-top:-75px;
+   bottom:50%;
+   margin-bottom:-75px;
    background-color:yellow;
 }
 
 #south {
-   left:50%;
-   margin-left:-75px;
+   right:50%;
+   margin-right:-75px;
    bottom: 20px;
    background-color:blue;
 }
