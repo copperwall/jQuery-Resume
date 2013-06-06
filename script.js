@@ -1,11 +1,35 @@
 $(function() {
    var focus = null;
 
-   $('.sphere').mouseenter(function() {
+   $('#north').mouseenter(function() {
+      $('#north').animate({
+         width: "+=20px",
+         height: "+=20px",
+         top: "-=10px",
+         left: "-=10px"
+      }, 200);
+   });
+
+   $('#north').mouseleave(function() {
+      $('#north').animate({
+         width: "-=20px",
+         height: "-=20px",
+         top: "+=10px",
+         left: "+=10px"
+      }, 200);
+   });
+
+   /*$('.sphere').mouseenter(function() {
       $(this).animate({
          width: "+=20px",
          height: "+=20px"
       }, 200);
+
+      if ($(this) === $('#north'))
+         $(this).animate({
+            top: "-=20px",
+            left: "-=20px"
+         }, 200);
    });
 
    $('.sphere').mouseleave(function() {
@@ -13,15 +37,17 @@ $(function() {
          width: "-=20px",
          height: "-=20px"
       }, 200);
-   });
+   });*/
 
    $('#north').click(function() {
+      $('#north').css("z-index", "100");
       $('#north').animate({top: "40%"}, 2000);
       $('#north').animate({
-         width: "80%",
-         height: "100%",
-         top: 0,
-         left: 0
+         width: "600px",
+         height: "600px",
+         top: "20px",
+         left: "32%",
       }, 2000);
+      
    })
 });
