@@ -1,0 +1,58 @@
+#back {
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   font-family:Garamond;
+   text-align:center;
+}
+
+#back h1, h4{
+   position:relative;
+   top:50%;
+}
+
+#back h1 {
+   margin-top:-50px;
+}
+
+.sphere {
+   position:absolute;
+   width:150px;
+   height:150px;
+   border-radius:100%;
+}
+
+#north {
+   left:50%;
+   margin-left:-75px;
+   top:20px;
+   background-color:red;
+}
+
+#west {
+   top:50%;
+   margin-top:-75px;
+   left:20px;
+   background-color:green;
+}
+
+#east {
+   right:20px;
+   top:50%;
+   margin-top:-75px;
+   background-color:yellow;
+}
+
+#south {
+   left:50%;
+   margin-left:-75px;
+   bottom: 20px;
+   background-color:blue;
+}
+
+.sphere p {
+   position:relative;
+   text-align:center;
+   margin-top:60px;
+}
